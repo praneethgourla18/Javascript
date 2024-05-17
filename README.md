@@ -1,2 +1,2 @@
-JAVASCRIPT
---Learning js in an efficient way !
+# JAVASCRIPT
+Learning js in an efficient way !
