@@ -1,6 +1,7 @@
-// if
-const isUserloggedIn = true
-const temperature = 41
+// // if
+
+// const isUserloggedIn = true
+// const temperature = "41"
 
 // if ( temperature === 40 ){
 //     console.log("less than 50");
@@ -23,7 +24,7 @@ const temperature = 41
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");
+// if (balance > 500) console.log("test") , console.log("test2");
 
 // if (balance < 500) {
 //     console.log("less than 500");
