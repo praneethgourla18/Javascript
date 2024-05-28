@@ -20,7 +20,7 @@
     const changeMe = setTimeout(changeText, 2500) //so after a delay of 2.5 seconds the changeText function will run
 
     document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
+        clearTimeout(changeMe) //In JavaScript, clearTimeout is used to cancel a timeout that was previously set using setTimeout. This is useful when you need to prevent a delayed function from executing if certain conditions change before the timeout period elapses.
         console.log("STOPPED")
     })
 </script>
