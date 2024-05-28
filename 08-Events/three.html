@@ -12,11 +12,22 @@
 </body>
 <script>
     const sayDate = function(str){
-        console.log(str, Date.now());
+        console.log(str);
     }
 
-    const intervalId = setInterval(sayDate, 1000, "hi")
+    // setInterval is used to repeatedly execute a specified function or code snippet at fixed time intervals. clearInterval is used to stop the execution of a function that was set to be called repeatedly with setInterval.
 
-    clearInterval(intervalId)
+     let intervalId;
+
+     document.querySelector("#start").addEventListener('click' ,function(){
+        console.log("msg printing has started")
+        intervalId = setInterval(sayDate, 1000 ,"HII")  
+     })
+     document.querySelector("#stop").addEventListener('click' ,function(){
+         console.log("msg printing has been stopped")
+            
+        clearInterval(intervalId)
+     })
+
 </script>
 </html>
