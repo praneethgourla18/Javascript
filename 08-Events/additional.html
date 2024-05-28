@@ -1,0 +1,30 @@
+
+<!-- Example for setTimeout and clearTimeout -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear Timeout Example</title>
+</head>
+<body>
+  <button id="startButton">Start Timeout</button>
+  <button id="cancelButton">Cancel Timeout</button>
+
+  <script>
+    let timeoutID;
+
+    document.getElementById('startButton').addEventListener('click', () => {
+      timeoutID = setTimeout(() => {
+        console.log('This message will be displayed unless the timeout is cleared.');
+      }, 5000);
+    });
+
+    document.getElementById('cancelButton').addEventListener('click', () => {
+      clearTimeout(timeoutID);
+      console.log('Timeout has been cleared.');
+    });
+  </script>
+</body>
+</html>
